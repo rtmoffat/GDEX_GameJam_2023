@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyg4xfs1bfslb"]
+[gd_scene load_steps=3 format=3 uid="uid://dyg4xfs1bfslb"]
 
-[ext_resource type="PackedScene" uid="uid://c7mapk7onmdv4" path="res://tile_map.tscn" id="1_th6kt"]
+[ext_resource type="Texture2D" uid="uid://dtq6at6rs5n0r" path="res://door_right.png" id="2_etlsj"]
+[ext_resource type="Script" path="res://CharacterBody2D_move.gd" id="3_qteul"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(400, 248)
 
-[node name="TileMap" parent="." instance=ExtResource("1_th6kt")]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("3_qteul")
+
+[node name="DoorRight" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-32, -8)
+scale = Vector2(5, 5)
+texture = ExtResource("2_etlsj")

@@ -18,3 +18,7 @@ config/icon="res://icon.svg"
 [display]
 
 window/per_pixel_transparency/allowed=true
+
+[editor]
+
+movie_writer/movie_file="C:/Users/cpdav/Documents/Dev/GDEX_GameJam_2023/GoDot/Clips/clip1.avi"
